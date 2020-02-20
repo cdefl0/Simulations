@@ -1,4 +1,24 @@
 import random
+import sys 
+
+def selectionsort(arr):
+    n = len(arr)
+    s={"♠":0,"♥":1,"♦":2,"♣":3}
+    f={"A":1,"J":11,"Q":12,"K":13}
+    
+    for i in range(n): 
+
+	low = i 
+	for j in range(i+1, n): 
+		if A[low] > A[j]: 
+			low = j 
+	 
+	x[i], x[low] = x[low], x[i] 
+
+    print ("Sorted array") 
+    for i in range(n): 
+	print("%d" %x[i]), 
+
 
 def shuffle(arr):
     n = len(arr)
